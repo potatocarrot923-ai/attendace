@@ -501,7 +501,7 @@ button:disabled { opacity: .5; cursor: not-allowed; }
           <div class="card">
             <h3>System Status</h3>
             <div class="status-grid">
-              <div class="mini-stat"><span>Data mode</span><strong id="backendStatus">Local fallback</strong></div>
+              <div class="mini-stat"><span>Data mode</span><strong id="backendStatus">Connecting…</strong></div>
               <div class="mini-stat"><span>Storage</span><strong>Browser storage</strong></div>
               <div class="mini-stat"><span>Session</span><strong id="deskSessionCode">--</strong></div>
               <div class="mini-stat"><span>Clock</span><strong id="deskClock">--:--</strong></div>
@@ -628,10 +628,13 @@ const CONFIG = Object.freeze({
   storeName: 'records',
   metaStore: 'metadata',
   lateThresholdMins: 15,
-  API_BASE_URL: window.location.protocol === 'http:' || window.location.protocol === 'https:' ? '' : 'http://localhost:3000'
+  // GitHub Pages is static, so point it at your deployed Render API.
+  // Leave empty when the frontend and API are served from the same origin.
+  API_BASE_URL: 'https://YOUR-RENDER-SERVICE.onrender.com'
 });
 
 const LOCAL_FALLBACK_ALLOWED = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+const STATIC_GITHUB_MODE = window.location.hostname.endsWith('.github.io');
 
 const CLASS_SCHEDULE = Object.freeze([
   { id: 'mon-math', day: 'Monday', start: '08:00', end: '09:00', subject: 'Mathematics', room: 'Room 201', teacher: 'Instructor' },
