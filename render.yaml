@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: carrot-attendance
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    envVars:
+      - key: CARROT_PUBLIC_MODE
+        value: "1"
+      - key: CARROT_ADMIN_PASSWORD
+        sync: false
