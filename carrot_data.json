@@ -1,0 +1,103 @@
+{
+  "attendance": [],
+  "reports": [],
+  "schedule": [
+    {
+      "id": "mon-math",
+      "day": "Monday",
+      "start": "08:00",
+      "end": "09:00",
+      "subject": "Mathematics",
+      "room": "Room 201",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "mon-science",
+      "day": "Monday",
+      "start": "09:15",
+      "end": "10:15",
+      "subject": "Science",
+      "room": "Lab 1",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "tue-english",
+      "day": "Tuesday",
+      "start": "08:00",
+      "end": "09:00",
+      "subject": "English",
+      "room": "Room 201",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "tue-computing",
+      "day": "Tuesday",
+      "start": "09:15",
+      "end": "10:15",
+      "subject": "Computer Studies",
+      "room": "Computer Lab",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "wed-history",
+      "day": "Wednesday",
+      "start": "08:00",
+      "end": "09:00",
+      "subject": "History",
+      "room": "Room 201",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "wed-filipino",
+      "day": "Wednesday",
+      "start": "09:15",
+      "end": "10:15",
+      "subject": "Filipino",
+      "room": "Room 201",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "thu-pe",
+      "day": "Thursday",
+      "start": "08:00",
+      "end": "09:00",
+      "subject": "Physical Education",
+      "room": "Gymnasium",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "thu-arts",
+      "day": "Thursday",
+      "start": "09:15",
+      "end": "10:15",
+      "subject": "Arts",
+      "room": "Studio",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "fri-review",
+      "day": "Friday",
+      "start": "08:00",
+      "end": "09:00",
+      "subject": "Computer Studies",
+      "room": "Computer Lab",
+      "teacher": "Instructor"
+    },
+    {
+      "id": "fri-advisory",
+      "day": "Friday",
+      "start": "09:15",
+      "end": "10:15",
+      "subject": "Other",
+      "room": "Room 201",
+      "teacher": "Instructor"
+    }
+  ],
+  "password_salt": "3dd47ed5e928c7b40968a63d3cd0fc71",
+  "password_hash": "010ad81d4b40975674615f2064986d5faf09b190a04b1dcfad8fa39ddfef2e31",
+  "current_session": {
+    "date": "2026-09-14",
+    "code": "086313",
+    "startedAt": "2026-09-14T04:24:51Z"
+  }
+}
